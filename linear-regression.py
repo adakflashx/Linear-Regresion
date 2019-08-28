@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # import data
-df = pd.read_csv("multiple-linear-regression-dataset.csv",sep = ";")
+df = pd.read_csv("linear-regression-data.csv",sep = ";")
 
 # plot data
 plt.scatter(df.Deneyim,df.maas)
