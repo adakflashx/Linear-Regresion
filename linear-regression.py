@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("linear-regression-data.csv",sep = ";")
 
 # plot data
-plt.scatter(df.Deneyim,df.maas)
-plt.xlabel("Deneyim")
-plt.ylabel("maas")
+plt.scatter(df.Experience,df.Salary)
+plt.xlabel("Experience")
+plt.ylabel("Salary")
 plt.show()
 
 #%% linear regression
@@ -25,8 +25,8 @@ from sklearn.linear_model import LinearRegression
 # linear regression model
 linear_reg = LinearRegression()
 
-x = df.Deneyim.values.reshape(-1,1)
-y = df.maas.values.reshape(-1,1)
+x = df.Experience.values.reshape(-1,1)
+y = df.Salary.values.reshape(-1,1)
 
 linear_reg.fit(x,y)
 
